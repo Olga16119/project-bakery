@@ -74,14 +74,14 @@
           </div>
         </div>
       </section>
-      <section class="section" id="chefs-section">
+      <section class="section " id="chefs-section">
         <div class="container">
           <h2 class="section-title chefs-title centered">
             Наші найкращі <br />
             <span class="accent">шеф-кухарі</span>
           </h2>
-          <ul>
-            <li>
+          <ul class="chefs-list" >
+            <li class="chef-item">
               <article>
                 <img
                   class="chef-photo"
@@ -96,7 +96,7 @@
                 </p>
               </article>
             </li>
-            <li>
+            <li class="chef-item">
               <article>
                 <img
                   class="chef-photo"
@@ -127,6 +127,7 @@
             <ul class="formats-list">
               <li class="formats-item">
                 <article class="format-card">
+                  <img class="format-image" src="./images/walrus-format.jpg" alt="Walrus format">
                   <h3 class="format-title" lang="en">Walrus</h3>
                   <div class="format-text">
                     <p>Площа: до 120 м2</p>
@@ -141,6 +142,7 @@
               </li>
               <li class="formats-item">
                 <article class="format-card">
+                  <img class="format-image" src="./images/horseshoe-format.jpg" alt="Horseshoe format">
                   <h3 class="format-title" lang="en">Horseshoe</h3>
                   <div class="format-text">
                     <p>Площа: до 120 м2</p>
@@ -155,6 +157,7 @@
               </li>
               <li class="formats-item">
                 <article class="format-card">
+                  <img class="format-image" src="./images/handlebar-format.jpg" alt="Handlebar format">
                   <h3 class="format-title" lang="en">Handlebar</h3>
                   <div class="format-text">
                     <p>Площа: до 120 м2</p>
@@ -209,7 +212,7 @@
             <a class="form-terms-link" href="#"> політикою конфіденційності</a>
           </p>
         </form>
-          <iframe
+          <iframe class="maps"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1640531314047!2d30.491233500000003!3d50.4566697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCDQo9C60YDQsNGX0L3QsCwgMDIwMDA!5e0!3m2!1suk!2spl!4v1699822995719!5m2!1suk!2spl"
             width="603"
             height="595"
@@ -222,21 +225,21 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <nav>
-          <a href="#"
+        <nav class="header-nav">
+          <a class="logo-footer" href="#"
             ><img src="./images/logo.svg" alt="Логотип сучасної пекарні"
           /></a>
 
-          <ul>
+          <ul class="header-menu">
             <li>
-              <a class="link" href="#traditions-section">Наші традиції</a>
+              <a  class="link" href="#traditions-section">Наші традиції</a>
             </li>
             <li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
             <li><a class="link" href="#formats-section">Формати</a></li>
             <li><a class="link" href="#contacts-section">Контакти</a></li>
           </ul>
         </nav>
-        <address>
+        <address class="address">
           <ul>
             <li>
               <a class="address-link" href="tel:+380960000007"
@@ -279,7 +282,7 @@
         </address>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop visually-hidden">
       <div class="modal">
         <button class="modal-btn-close" type="button">Close</button>
         <h2>Замовити дзвінок</h2>
